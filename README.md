@@ -1,4 +1,3 @@
-<<<<<<< README.md
 HDTV (also called OITV) is an infotainment display written for the Rutgers OIT HelpDesk that aims to be the go to source for weather, bus times, news, and walk-in appointments.
 
 HDTV currently supports features for the aforementioned and may include additional features in the future.
@@ -22,6 +21,9 @@ TODO: There are plans to reproduce the functionality of this section all in Java
 News: (folders: twitter-api-php-master)(src - files: twitterfeed.php, index.js)
 The News section of HDTV currently utilizes Reuters as a source for news and pulls this news from Reuters official @Reuters Twitter account. This section was written using PHP and JavaScript. The sources used for this section are Twitter API and the GOQR API.
 TODO: There are plans to implement more news sources and possibly move away from twitter and into simple RSS feeds.
+NOTES regarding API keys: 
+1. Copy `config.php.dist` to `config.php`.
+2. Put Twitter API secret keys into `config.php`.
 
 Walk-In appointments: (folders: calendar)(files: index.js)
 The Walk-in Appointments section shows the next 4 walk-in appointments in the timeframe of a month. This section was written using the calendar piece pulled from http://gwaihir.rutgers.edu/rn/display/ as the data source.
@@ -38,7 +40,3 @@ Albert Cassamajor - Mentor of Unix and assistance with configuring the raspberry
 Andy Henriquez - OpenWeather API key holder
 
 Special thanks to all staff, faculty, and students for feedback and advice
-
-
-
->>>>>>> README.md
