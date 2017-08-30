@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='fullcalendar.css' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script type='text/javascript' src='fullcalendar.js'></script>
+
+</head>
+
+<body>
+<script>
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        events: 'calendar.php',
+        defaultView: 'agendaWeek',
+        firstHour: 10,
+        allDayDefault: false,
+        contentHeight: 600,
+        minTime: '8:00am',
+        maxTime: '8:00pm',
+        header: false,
+        allDaySlot: false,
+        //eventBackgroundColor: "#cc5500",
+        //eventBorderColor: "#cc5500",
+        eventColor: "#cc5500",
+	eventTextColor: '#222',
+	timeFormat: ''
+    })
+
+});
+</script>
+
+<center><div style="width: 525px" id='calendar'></div>
+</center>
+</body>
+
+
+</html>

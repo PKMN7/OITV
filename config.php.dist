@@ -1,0 +1,9 @@
+<?php
+$settings = array(
+    // Twitter API Access Keys. See https://dev.twitter.com/apps/
+    'oauth_access_token' => "",         // OAuth Token
+    'oauth_access_token_secret' => "",  // OAuth Secret
+    'consumer_key' => "",               // Consumer Key
+    'consumer_secret' => ""             // Consumer Secret
+);
+?>
