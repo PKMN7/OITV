@@ -7,8 +7,9 @@
 
 $city="Piscataway";
 $country="US";
-$url="http://api.openweathermap.org/data/2.5/forecast/daily?q=".$city.",".$country."&units=imperial&cnt=7&lang=en&appid=cee6efaacaa8adfde69b77da692f7506";
-$cur="http://api.openweathermap.org/data/2.5/weather?q=".$city.",".$country."&units=imperial&cnt=7&lang=en&appid=cee6efaacaa8adfde69b77da692f7506";
+$key=""; //removed 
+$url="http://api.openweathermap.org/data/2.5/forecast/daily?q=".$city.",".$country."&units=imperial&cnt=7&lang=en&appid=".$key;
+$cur="http://api.openweathermap.org/data/2.5/weather?q=".$city.",".$country."&units=imperial&cnt=7&lang=en&appid=".$key;
 $json=file_get_contents($url);
 $data=json_decode($json,true);
 $curjson=file_get_contents($cur);
